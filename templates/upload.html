@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+	<title>LOCAL FILE TRANSFER</title>
+</head>
+
+
+<body>
+	<center>
+		<b><i>Basically like a mini version of xender</i></b>
+		<fieldset>
+			<legend>File Upload</legend>
+		<form action="/uploader" method="post" enctype="multipart/form-data">
+			<label>Browse file to upload:</label>
+			<br>
+			<input type="file" name="file"/>
+			<br>
+			<input type="submit" value="Upload"/>
+		</form>
+	</fieldset>
+	</center>
+	<script language="Javascript" type="text/Javascript">
+	function disp(){
+		alert("file is being uploaded")
+	}
+</script>
+</body>
+
+</html>

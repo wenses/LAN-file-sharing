@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+	<title>available files in the server</title>
+</head>
+
+
+
+<body>
+	<center>
+		<fieldset>
+			<legend><strong>FILES ON THE SERVER</strong></legend>
+			<ol>{%for file in files: %}
+				<li name="{{loop.index}}">{{file}} </li>
+				<br>
+				{%endfor%}
+			</ol>
+		</fieldset>
+		<br>
+		<form action="/view" method="post">
+			<input type="number" name="fid" style="width:500px;height:25px;" placeholder="choose number id for file to view"/>
+			<br><br>
+			<input type="submit" value="View/Download file"/>
+		</form>
+	</center>
+</body>
+
